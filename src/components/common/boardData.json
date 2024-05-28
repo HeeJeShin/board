@@ -1,0 +1,17 @@
+[
+  {
+    "boardNo" : 1,
+    "title" : "제목입니다",
+    "content" : "내용이 입력됩니다"
+  },
+  {
+    "boardNo" : 2,
+    "title" : "제목입니다",
+    "content" : "내용이 입력됩니다"
+  },
+  {
+    "boardNo" : 3,
+    "title" : "제목입니다",
+    "content" : "내용이 입력됩니다"
+  }
+]
