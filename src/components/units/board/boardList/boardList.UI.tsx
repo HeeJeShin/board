@@ -1,6 +1,5 @@
-// pages/board/BoardListUI.tsx
 import React from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import boardData from '../../../common/boardData.json';
 import * as S from '@styles/common.style';
 
