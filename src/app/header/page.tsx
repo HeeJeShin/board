@@ -1,25 +1,36 @@
 "use client";
-import styled from "@emotion/styled";
+import * as S from '@styles/header.styles'
 
-const headNav = styled.nav`
-    flex: 1;
-    height: 150px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-`;
+
 
 import Link from "next/link";
+import {LogoImg} from "@styles/header.styles";
 export default function Header (){
     return (
-        <nav className="flex space-x-4 mb-2">
-            <Link href="/" className="bg-blue-200 rounded px-4 py-2">
-                Home
-            </Link>
-            <Link href="/test" className="bg-cyan-200 rounded px-4 py-2">
-                Todos
-            </Link>
-        </nav>
+        <>
+         <S.Head>
+
+             {/* eslint-disable-next-line @next/next/no-img-element */}
+             <S.Logo><Link href="/"><S.LogoImg src="/public/images/logo.png" alt="logo"/></Link>
+             </S.Logo>
+             <S.HeadNav>
+                 <ul>
+                     <S.GnbLI>
+                         <Link href="/" className="bg-blue-200 rounded px-4 py-2">
+                             Home
+                         </Link>
+                     </S.GnbLI>
+                     <S.GnbLI>
+                         <Link href="/board" className="bg-cyan-200 rounded px-4 py-2">
+                             Todos
+                         </Link>
+                     </S.GnbLI>
+                 </ul>
+
+             </S.HeadNav>
+         </S.Head>
+
+        </>
+
     )
 }

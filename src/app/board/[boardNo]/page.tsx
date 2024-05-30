@@ -1,8 +1,8 @@
 "use client";
 
 
-import BoardDetailUI from "../../../components/units/board/boardDetail/boardDetail.UI";
 
+import BoardDetailUI from "@components/board/boardDetail/boardDetail.UI";
 
 export default function BoardDetail() {
 
